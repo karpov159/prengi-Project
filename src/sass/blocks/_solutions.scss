@@ -1,0 +1,102 @@
+.solutions {
+    min-height: 890px;
+    padding: 73px 0 60px 0;
+    background: url('../img/bg2.png') center center/cover no-repeat;
+    &__title {
+        width: 648px;
+        margin: 0 auto;
+    }
+    &__menu {
+        display: flex;
+        width: 843px;
+        height: 65px;
+        padding: 20px 30px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border: 1px solid #fff;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+        &_active {
+            color: #00C2F0;
+        }
+        &:hover {
+            color: #00C2F0;
+            text-decoration: none;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            height: 45px;
+            width: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -26px;
+            background-color: rgb(148, 142, 142);
+        }
+        &-nostick {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &__slider {
+        width: 947px;
+        height: 560px;
+        // text-align: center;
+        margin: 0 auto;
+        margin-top: 35px;
+        position: relative;
+
+        &-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+        &-inner {
+            width: 600%;
+            display: flex;
+            transition: all 0.6s ease 0s;
+        }
+        &-prev {
+            cursor: pointer;
+            top: 41%;
+            left: -5%;
+            position: absolute;
+        }
+        &-next {
+            cursor: pointer;
+            top: 41%;
+            right: -5%;
+            position: absolute;
+        }
+    }
+    &__slide {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 435px;
+            object-fit: cover;
+        }
+    }
+    &__border {
+        width: 100%;
+        padding: 37px 125px 88px 128px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}
