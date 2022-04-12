@@ -1,0 +1,42 @@
+.options {
+    min-height: 580px;
+    display: grid;
+    grid-template: 580px / repeat(2, 1fr);
+    position: relative;
+    &__item {
+        position: relative;
+        z-index: -1;
+    }
+    &__title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 401px;
+        top: 70px;
+        z-index: 3;
+    }
+    &__left {
+        padding: 270px 80px 220px 360px;
+        text-align: end;
+        background: url('../img/options/item1.png') center center/cover no-repeat;
+    }
+    &__right {
+        padding: 270px 360px 220px 80px;
+        text-align: start;
+        background: url('../img/options/item2.png') center center/cover no-repeat;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,51 @@
+.footer {
+    background: #168fad;
+    padding: 60px 0 40px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+    }
+    &__link {
+        a {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+            &:hover {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+        img {
+            margin: 15px 0;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-bottom: 7px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__hr {
+        height: 1px;
+        background: #ffffffc5;
+        width: 100%;
+        margin-top: 60px;
+        border: none;
+    }
+    &__rights {
+        margin-top: 35px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
